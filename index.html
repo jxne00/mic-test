@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mic Test</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mic Test</h1>
+
+        <p class="description">Click the button below to start recording your audio.
+            <br>Once stopped, the recorded audio will be available for playback.
+        </p>
+
+        <button id="toggleRecord">Start Recording</button>
+
+        <audio id="player" controls preload="metadata"></audio>
+
+        <canvas id="waveform" width="600" height="100" style="display: none;"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
